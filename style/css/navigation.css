@@ -3,6 +3,7 @@
   height: 30px;
 }
 .header__nav {
+  font-size: 1.125rem;
   margin-left: 2em;
 }
 .header__menu {
@@ -16,5 +17,6 @@
   color: #000;
 }
 .header__btn {
+  font-size: 1.3rem;
   margin-left: auto;
 }/*# sourceMappingURL=navigation.css.map */

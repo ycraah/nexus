@@ -1,1 +1,18 @@
-/*# sourceMappingURL=home.css.map */
+@import url("./base.css");
+@import url("./header.css");
+.text-switch__text {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+.text-switch__text::after {
+  content: "Let's talk";
+  width: 100%;
+  position: absolute;
+  top: 200%;
+  left: 25%;
+}
+
+.btn:hover .text-switch__text {
+  transform: translateY(-200%);
+}/*# sourceMappingURL=home.css.map */

@@ -1,7 +1,8 @@
 .btn{
     padding:1em;
     border:1px solid #000;
-    transition:.25s;
+    transition:background-color .5s;
+    overflow:hidden;
     &:hover{
         border-color: transparent;
     }
@@ -10,6 +11,7 @@
 .btn--round{
     border-radius:25px;
 }
+
 
 .btn--hover-blue:hover{
     color:#eee;

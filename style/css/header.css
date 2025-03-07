@@ -1,8 +1,5 @@
 @import url("./navigation.css");
 @import url("./button.css");
-.header {
-  font-size: 20px;
-}
 .header__inner {
   display: flex;
   align-items: center;
