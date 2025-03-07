@@ -12,6 +12,7 @@
 .header__menu-item {
   color: #aaa;
   margin-right: 2em;
+  transition: color 0.5s;
 }
 .header .item-active {
   color: #000;
