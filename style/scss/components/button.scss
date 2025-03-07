@@ -1,0 +1,14 @@
+.btn{
+    padding:1em;
+    border:1px solid #000;
+    transition:.25s;
+    &:hover{
+        color:#eee;
+        background-color:#0367fc;
+        border-color: transparent;
+    }
+}
+
+.btn--round{
+    border-radius:25px;
+}
