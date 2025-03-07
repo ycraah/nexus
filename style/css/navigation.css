@@ -4,4 +4,17 @@
 }
 .header__nav {
   margin-left: 2em;
+}
+.header__menu {
+  display: flex;
+}
+.header__menu-item {
+  color: #aaa;
+  margin-right: 2em;
+}
+.header .item-active {
+  color: #000;
+}
+.header__btn {
+  margin-left: auto;
 }/*# sourceMappingURL=navigation.css.map */

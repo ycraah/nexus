@@ -6,4 +6,17 @@
     &__nav{
         margin-left:2em;
     }
+    &__menu{
+        display:flex;
+    }
+    &__menu-item{
+        color:#aaa;
+        margin-right:2em;
+    }
+    .item-active{
+        color:#000;
+    }
+    &__btn{
+        margin-left:auto;
+    }
 }
