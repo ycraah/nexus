@@ -1,15 +1,15 @@
+@use "../abstracts/variables" as vars;
 @import url("./navigation.css");
 @import url("./button.css");
-@import "../abstracts/variables.scss";
+
 
 .header{
     font-size:20px;
     &__inner{
         display:flex;
         align-items: center;
-        max-width:$ly-max-width;
+        max-width:vars.$ly-max-width;
         margin:0 auto;
         padding:20px;
-        border:1px solid red;
     }
 }
