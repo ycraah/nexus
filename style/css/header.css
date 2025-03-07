@@ -1,0 +1,14 @@
+@import url("./navigation.css");
+.header__inner {
+  display: flex;
+  max-width: 1320px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.header__logo-image {
+  width: 30px;
+  height: 30px;
+}
+.header__nav {
+  margin-left: 2em;
+}/*# sourceMappingURL=header.css.map */
