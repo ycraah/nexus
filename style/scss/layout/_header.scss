@@ -1,0 +1,15 @@
+.header{
+    &__inner{
+        display:flex;
+        max-width:1320px;
+        margin:0 auto;
+        border:1px solid red;
+    }
+    &__logo-image{
+        width:30px;
+        height:30px;
+    }
+    &__nav{
+        margin-left:2em;
+    }
+}

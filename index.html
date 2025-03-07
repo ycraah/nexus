@@ -7,12 +7,12 @@
     <!-- CSS Reset -->
     <link rel="stylesheet" href="./node_modules/reset-css/reset.css" />
     <!-- SCSS to CSS layout -->
-     <link rel="stylesheet" href="./style/layout.css">
+     <link rel="stylesheet" href="./style/global.css">
 </head>
 <body>
     <header class="header">
         <div class="header__inner">
-            <div class="header__logo"><a href="#">로고</a></div>
+            <div class="header__logo"><a class="header__logo-link" href="#"><img class="header__logo-image" src="https://www.korsa.io/images/logo.png" alt="로고"></a></div>
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li class="header__menu-item item-active"><a href="#">Use Cases</a></li> 
@@ -22,12 +22,9 @@
                 </ul>
             </nav>
             <div class="header__btn btn--round">
-                <a href="#">
-                    <div class="text-switch">
-                    <div class="text-switch">
-                        <span class="text-swtch__text text-switch__text--primary">기본 텍스트</span>
-                        <span class="text-switch__text text-switch__text--secondary">호버 텍스트</span>
-                    </div>
+                <a href="#" class="text-switch">
+                    <span class="text-swtch__text text-switch__text--primary">기본 텍스트</span>
+                    <span class="text-switch__text text-switch__text--secondary">호버 텍스트</span>
                 </a>
             </div><!--header__btn-->
         </div><!--header__inner-->
