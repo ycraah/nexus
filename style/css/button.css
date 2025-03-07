@@ -1,5 +1,5 @@
 .btn {
-  padding: 1em;
+  padding: 0.75em;
   border: 1px solid #000;
   transition: background-color 0.5s;
   overflow: hidden;
@@ -15,4 +15,30 @@
 .btn--hover-blue:hover {
   color: #eee;
   background-color: #0367fc;
+}
+
+.btn .text-switch {
+  position: relative;
+  width: 12rem;
+  height: 1.3rem;
+  overflow: hidden;
+}
+.btn .text-switch .text {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.btn .text-switch .default-text {
+  top: 0;
+}
+.btn .text-switch .hover-text {
+  top: 150%;
+}
+.btn:hover .default-text {
+  transform: translateY(-150%);
+}
+.btn:hover .hover-text {
+  transform: translateY(-150%);
 }/*# sourceMappingURL=button.css.map */

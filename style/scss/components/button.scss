@@ -1,5 +1,5 @@
 .btn{
-    padding:1em;
+    padding:.75em;
     border:1px solid #000;
     transition:background-color .5s;
     overflow:hidden;
@@ -17,3 +17,35 @@
     color:#eee;
     background-color:#0367fc;
 }
+
+.btn{
+    .text-switch {
+        position: relative;
+        width: 12rem;
+        height:1.3rem;
+        overflow: hidden;
+        .text {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .default-text {
+            top: 0;
+        }
+        .hover-text {
+            top: 150%;
+        }
+        
+    }
+    &:hover {
+        .default-text{
+            transform: translateY(-150%);
+        }
+        .hover-text {
+            transform: translateY(-150%);
+        }
+    }
+}
+
