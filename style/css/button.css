@@ -4,11 +4,14 @@
   transition: 0.25s;
 }
 .btn:hover {
-  color: #eee;
-  background-color: #0367fc;
   border-color: transparent;
 }
 
 .btn--round {
   border-radius: 25px;
+}
+
+.btn--hover-blue:hover {
+  color: #eee;
+  background-color: #0367fc;
 }/*# sourceMappingURL=button.css.map */
