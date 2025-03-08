@@ -8,16 +8,17 @@
 }
 .header__menu {
   display: flex;
+  -moz-column-gap: 3em;
+       column-gap: 3em;
 }
 .header__menu-item {
   color: #aaa;
-  margin-right: 2em;
   transition: color 0.5s;
 }
 .header .item-active {
   color: #000;
 }
 .header__btn {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-left: auto;
 }/*# sourceMappingURL=navigation.css.map */

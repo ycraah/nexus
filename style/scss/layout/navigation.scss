@@ -9,17 +9,17 @@
     }
     &__menu{
         display:flex;
+        column-gap:3em;
     }
     &__menu-item{
         color:#aaa;
-        margin-right:2em;
         transition:color .5s;
     }
     .item-active{
         color:#000;
     }
     &__btn{
-        font-size:1.3rem;
+        font-size:1.1rem;
         margin-left:auto;
     }
 }
