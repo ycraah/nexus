@@ -1,2 +1,26 @@
 @import url("./base.css");
-@import url("./header.css");/*# sourceMappingURL=home.css.map */
+@import url("./header.css");
+.section__inner {
+  margin: 5em auto;
+  max-width: 1320px;
+}
+.section__text {
+  text-align: center;
+}
+.section__primary-text {
+  font-weight: bold;
+  font-size: 4.5rem;
+}
+.section__primary-text .text-image {
+  width: 8rem;
+  height: 6rem;
+}
+.section__secondary-text {
+  margin-top: 1.5em;
+  width: 50%;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 150%;
+}/*# sourceMappingURL=home.css.map */

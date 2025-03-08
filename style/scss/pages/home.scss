@@ -1,3 +1,30 @@
+@use "../abstracts/variables" as vars;
 @import url("./base.css");
 @import url("./header.css");
 
+.section{
+    &__inner{
+        margin:5em auto;
+        max-width:vars.$ly-max-width;
+    }
+    &__text{
+        text-align:center;
+    }
+    &__primary-text{
+        font-weight:bold;
+        font-size:4.5rem;
+        .text-image{
+            width:8rem;
+            height:6rem;
+        }
+    }
+    &__secondary-text{
+        margin-top:1.5em;
+        width:50%;
+        font-weight:500;
+        display:inline-block;
+        font-size:1.5rem;
+        color:#777;
+        line-height:150%;
+    }
+}
