@@ -21,4 +21,17 @@
 .header__btn {
   font-size: 1.1rem;
   margin-left: auto;
+}
+
+@media screen and (max-width: 760px) {
+  .header__logo-image {
+    width: 45px;
+    height: 45px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
 }/*# sourceMappingURL=navigation.css.map */
