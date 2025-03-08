@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as vars;
 @import url("./navigation.css");
 @import url("./button.css");
+@import url("./hamburger.css");
 
 
 .header{
@@ -9,6 +10,32 @@
         align-items: center;
         max-width:vars.$ly-max-width;
         margin:0 auto;
-        padding:1.5em;
+        padding:1.5em 3em;
+    }
+    &__btn{
+        font-size:1.1rem;
+        margin-left:auto;
+    }
+    &__hamburger{
+        margin-left:auto;
+        display:none;
+    }
+}
+
+@media screen and (max-width:760px){
+    .header{
+        &__logo-image{
+            width:45px;
+            height:45px;
+        }
+        &__nav{
+            display:none;
+        }
+        &__btn{
+            display:none;
+        }
+        &__hamburger{
+            display:flex;
+        }
     }
 }

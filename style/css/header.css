@@ -1,9 +1,34 @@
 @import url("./navigation.css");
 @import url("./button.css");
+@import url("./hamburger.css");
 .header__inner {
   display: flex;
   align-items: center;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 1.5em;
+  padding: 1.5em 3em;
+}
+.header__btn {
+  font-size: 1.1rem;
+  margin-left: auto;
+}
+.header__hamburger {
+  margin-left: auto;
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .header__logo-image {
+    width: 45px;
+    height: 45px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__hamburger {
+    display: flex;
+  }
 }/*# sourceMappingURL=header.css.map */
