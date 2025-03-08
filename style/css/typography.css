@@ -13,6 +13,11 @@
   src: url("../src/fonts/GmarketSansTTFBold.ttf") format("truetype");
   font-weight: 700; /* Bold */
 }
+html {
+  font-size: clamp(10px, 1.25vw, 16px);
+}
+
 body {
+  font-size: 16px;
   font-family: "GmarketSans", "Noto Sans KR", Arial, sans-serif;
 }/*# sourceMappingURL=typography.css.map */
