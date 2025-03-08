@@ -1,10 +1,11 @@
 const textButtomUpRotate = (()=> {
     const targetTexts = document.querySelectorAll(".text-buttom-up-rotate");
-    setTimeout(() => {
-        targetTexts.forEach((targetText) => {
+    targetTexts.forEach((targetText, index) => {
+        setTimeout(() => {
             targetText.classList.add("active");
-        })
-    }, 3000)
+        }, 1000 * (index + 1))
+    })
+
    
 })
 
