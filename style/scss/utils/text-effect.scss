@@ -1,0 +1,12 @@
+.text-buttom-up-rotate{
+    display:inline-block;
+    transition:all 1s;
+    transform:rotate(20deg) translateY(100%);
+    opacity:0;
+}
+
+.text-buttom-up-rotate.active{
+    transform:rotate(0) translateY(0);
+    opacity:1;
+}
+
