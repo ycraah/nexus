@@ -1,5 +1,0 @@
-const horizontalScroll = () => {
-  
-};
-
-export { initHorizontalScroll };
