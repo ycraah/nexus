@@ -19,8 +19,8 @@
 
 .btn .text-switch {
   position: relative;
-  width: 10rem;
-  height: 1.3rem;
+  width: 14rem;
+  height: 1.5rem;
   overflow: hidden;
 }
 .btn .text-switch .text {
@@ -34,11 +34,11 @@
   top: 0;
 }
 .btn .text-switch .hover-text {
-  top: 150%;
+  top: 200%;
 }
 .btn:hover .default-text {
-  transform: translateY(-150%);
+  transform: translateY(-200%);
 }
 .btn:hover .hover-text {
-  transform: translateY(-150%);
+  transform: translateY(-200%);
 }/*# sourceMappingURL=button.css.map */

@@ -21,9 +21,9 @@
 .btn{
     .text-switch {
         position: relative;
-        width: 10rem;
-        height:1.3rem;
-        overflow: hidden;
+        width: 14rem;
+        height:1.5rem;
+        overflow:hidden;
         .text {
             position: absolute;
             left: 0;
@@ -35,16 +35,16 @@
             top: 0;
         }
         .hover-text {
-            top: 150%;
+            top: 200%;
         }
         
     }
     &:hover {
         .default-text{
-            transform: translateY(-150%);
+            transform: translateY(-200%);
         }
         .hover-text {
-            transform: translateY(-150%);
+            transform: translateY(-200%);
         }
     }
 }
