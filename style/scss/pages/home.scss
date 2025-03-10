@@ -73,9 +73,15 @@
     }
 }
 
+
+.background--about {
+    background: url("/src/img/bg-about.png") center no-repeat;
+}
 .section{
-    &__about-us{
+    &__about{
         width:100%;
         height:100vh;
+        
     }
 }
+
