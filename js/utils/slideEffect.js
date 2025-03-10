@@ -1,28 +1,33 @@
-const slideEffect = () => {
-    const slider = document.querySelector(".section__slider");
-
+const slideEffectVertical = () => {
+    const textWrapper = document.querySelector(".section__text");
+    const slider = document.querySelector(".slider");
+    const sliderWrapper = document.querySelector(".slider__wrapper");
+    const aboutUs = document.querySelector(".section__about-us");
+    
+   
     window.addEventListener("wheel", (e) => {
-        const scrollLeft = slider.scrollLeft;
-        const currentScroll = Math.round(scrollLeft + slider.clientWidth);
-        const maxScroll = slider.scrollWidth;
-        const sliderTopRect = slider.getBoundingClientRect().top;
-        // console.log(`sliderTopRect : ${sliderTopRect}`);
-        // console.log(`currentScroll : ${currentScroll}`);
-        // console.log(`maxScroll : ${maxScroll}`);
-        console.log(`sliderTopRect : ${sliderTopRect}`);
-        if(e.deltaY > 1){
-            if (currentScroll < maxScroll){
-                e.preventDefault();
-                slider.scrollLeft += e.deltaY;
-            }
-            else return;
-        } else {
-            if(scrollLeft !== 0 && sliderTopRect >= 0){
-                e.preventDefault();
-                slider.scrollLeft += e.deltaY;
-            } else return;
-        }
-    }, { passive: false });
+        const scrollLeft = sliderWrapper.scrollLeft;
+        const scrollRect = slider.getBoundingClientRect();
+        const textWrapperBottomRect = textWrapper.getBoundingClientRect().bottom;
+        if(textWrapperBottomRect < 0 && scrollRect.bottom > 1000){
+            sliderWrapper.classList.remove("absolute--top", "absolute--bottom");
+            sliderWrapper.classList.add("is-fixed");
+            sliderWrapper.scrollLeft += e.deltaY;
+        } else if (scrollLeft === 0 && scrollRect.top > -1000) {
+            sliderWrapper.classList.remove("is-fixed", "absolute--bottom");
+            sliderWrapper.classList.add("absolute--top");
+        } 
+    }, );
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                sliderWrapper.classList.remove("is-fixed", "absolute--top");
+                sliderWrapper.classList.add("absolute--bottom");
+            } 
+        })
+    })
+    observer.observe(aboutUs);
 }
 
-export { slideEffect };
+export { slideEffectVertical };

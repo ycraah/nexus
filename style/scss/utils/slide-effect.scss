@@ -1,0 +1,23 @@
+.slider{
+    position:relative;
+    &__wrapper{
+        position:absolute;
+        top:0;
+    }
+}
+
+.slider__wrapper.is-fixed{
+    position:fixed;
+    top:30%;
+}
+
+.slider__wrapper.absolute--top{
+    position:absolute;
+    top:0;
+}
+
+.slider__wrapper.absolute--bottom{
+    position:absolute;
+    top:initial;
+    bottom:0;
+}

@@ -6,6 +6,10 @@ const navClassToggle = (() => {
             menuItems[i].classList.add("item-active");
         })
     }
+    const sliderWrapper = document.querySelector(".slider__wrapper");
+    setTimeout(() => {
+        sliderWrapper.classList.add("active");
+    }, 1000);
 });
 
 

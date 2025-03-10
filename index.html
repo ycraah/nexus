@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nexus Page</title>
     <!-- CSS Reset -->
     <link rel="stylesheet" href="./node_modules/reset-css/reset.css" />
     <!-- SCSS to CSS layout -->
@@ -12,7 +12,7 @@
      <script defer src="./js/pages/home.js" type="module"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header theme--white">
         <div class="header__inner">
             <div class="header__logo"><a class="header__logo-link" href="#"><img class="header__logo-image" src="src/img/logo.png" alt="로고"></a></div>
             <nav class="header__nav">
@@ -36,23 +36,34 @@
             </div><!--header__hamburger-->
         </div><!--header__inner-->
     </header>
-    <section class="section">
-        <div class="section__inner">
-            <div class="section__text">
-                <span class="section__primary-text text-buttom-up-rotate">Delivering creatity with <br> our design <img class="text-image" src="https://www.korsa.io/images/head-svg,png.png" alt="노트북 이미지"> solutions</span>
-                <span class="section__secondary-text text-buttom-up-rotate">Passionate agency delivering creative design solutions for impactful results.</span>
-            </div><!--section__text-->
-            <div class="section__slider slider--vertical">
-                <div class="section__slide"><img src="src/img/head-img1.png" alt="slide image1"></div>
-                <div class="section__slide"><img src="src/img/head-img2.png" alt="slide image2"></div>
-                <div class="section__slide"><img src="src/img/head-img3.png" alt="slide image3"></div>
-                <div class="section__slide"><img src="src/img/head-img4.png" alt="slide image4"></div>
-                <div class="section__slide"></div>
-            </div><!--seciton__slider-->
-        </div><!--section__inner-->
-    </section>
-    <section class="">
+    <main>
+        <section class="section theme--white">
+            <div class="section__inner">
+                <div class="section__text">
+                    <span class="section__primary-text text-buttom-up-rotate">Delivering creatity with <br> our design <img class="text-image" src="https://www.korsa.io/images/head-svg,png.png" alt="노트북 이미지"> solutions</span>
+                    <span class="section__secondary-text text-buttom-up-rotate">Passionate agency delivering creative design solutions for impactful results.</span>
+                </div><!--section__text-->
+            </div><!--section__inner-->
+        </section>
+        <section class="section theme--white">
+            <div class="section__inner">
+                <div class="slider theme--white">
+                    <div class="slider__wrapper">
+                        <div class="slider__slide"><img src="src/img/head-img1.png" alt="슬라이드1"></div>
+                        <div class="slider__slide"><img src="src/img/head-img2.png" alt="슬라이드2"></div>
+                        <div class="slider__slide"><img src="src/img/head-img3.png" alt="슬라이드3"></div>
+                        <div class="slider__slide"><img src="src/img/head-img4.png" alt="슬라이드4"></div>
+                    </div><!--slider__wrapper-->
+                </div><!--slider-->
+            </div>
+        </section>
+        <section class="section theme--black">
+            <div class="section__inner">
+                <div class="section__about-us">
 
-    </section>
+                </div>
+            </div><!--section__inner-->
+        </section>
+    </main>
 </body>
 </html>
