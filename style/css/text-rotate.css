@@ -1,0 +1,13 @@
+.section__about {
+  position: relative;
+}
+
+.text--rotating {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.text__area {
+  display: flex;
+}/*# sourceMappingURL=text-rotate.css.map */

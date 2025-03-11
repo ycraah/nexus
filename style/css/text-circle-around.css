@@ -1,0 +1,25 @@
+.section {
+  position: relative;
+}
+.section .text-belt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+}
+.section .slope-right {
+  background-color: #2c3440;
+  rotate: 2deg;
+}
+.section .slope-left {
+  rotate: -2deg;
+  background-color: #0367fc;
+}
+.section .slope-left .text-belt__list {
+  display: flex;
+  font-size: 2rem;
+  height: 100%;
+  align-items: center;
+  gap: 2em;
+}/*# sourceMappingURL=text-circle-around.css.map */

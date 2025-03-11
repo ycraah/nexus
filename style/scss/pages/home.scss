@@ -3,6 +3,7 @@
 @import url("./header.css");
 @import url("./text-effect.css");
 @import url("./slide-effect.css");
+@import url("./text-circle-around.css");
 
 //section 전역 설정
 .section {
@@ -78,7 +79,7 @@
 
 
 //section about-us 
-.background--about {
+.background-image--about {
     background: url("/src/img/bg-about.png") center no-repeat;
 }
 
@@ -92,11 +93,11 @@
         font-size:1.2em;
         margin-bottom:1em;
     }
-    &__mention{
+    &__content{
         font-size:4em;
         line-height:150%;
     }
-    &__subscribe{
+    &__description{
         margin-top:1em;
         color:#777;
         font-size:1.5em;

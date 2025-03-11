@@ -2,6 +2,7 @@
 @import url("./header.css");
 @import url("./text-effect.css");
 @import url("./slide-effect.css");
+@import url("./text-circle-around.css");
 .section__inner {
   margin: 5em auto;
   max-width: 1320px;
@@ -67,7 +68,7 @@
   margin-right: 500px;
 }
 
-.background--about {
+.background-image--about {
   background: url("/src/img/bg-about.png") center no-repeat;
 }
 
@@ -80,11 +81,11 @@
   font-size: 1.2em;
   margin-bottom: 1em;
 }
-.section__mention {
+.section__content {
   font-size: 4em;
   line-height: 150%;
 }
-.section__subscribe {
+.section__description {
   margin-top: 1em;
   color: #777;
   font-size: 1.5em;
