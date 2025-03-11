@@ -5,7 +5,19 @@
   opacity: 0;
 }
 
+.text-buttom-up-opacity {
+  display: block;
+  transition: all 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
 .text-buttom-up-rotate.active {
   transform: rotate(0) translateY(0);
+  opacity: 1;
+}
+
+.text-buttom-up-opacity.active {
+  transform: translateY(0);
   opacity: 1;
 }/*# sourceMappingURL=text-effect.css.map */

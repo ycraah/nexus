@@ -9,4 +9,18 @@ const textButtomUpRotate = (()=> {
    
 })
 
-export {textButtomUpRotate}
+const textButtomUpOpacity = (() => {
+    const targetTexts = document.querySelectorAll(".section__about .text-buttom-up-opacity");
+    window.addEventListener("wheel", () => {
+        const aboutTopRect = document.querySelector(".section__about").getBoundingClientRect().top;
+        if(aboutTopRect < 1000){
+            targetTexts.forEach((targetText, index) => {
+                setTimeout(() => {
+                    targetText.classList.add("active");
+                }, 1000 * (index + 1))
+            })
+        }
+    }) 
+})
+
+export {textButtomUpRotate, textButtomUpOpacity}

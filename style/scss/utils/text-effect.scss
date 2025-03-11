@@ -1,7 +1,14 @@
-.text-buttom-up-rotate{
+.text-buttom-up-rotate {
     display:inline-block;
     transition:all 1s;
     transform:rotate(10deg) translateY(100%);
+    opacity:0;
+}
+
+.text-buttom-up-opacity{
+    display:block;
+    transition:all 1s;
+    transform: translateY(100%);
     opacity:0;
 }
 
@@ -10,3 +17,7 @@
     opacity:1;
 }
 
+.text-buttom-up-opacity.active{
+    transform: translateY(0);
+    opacity:1;
+}
