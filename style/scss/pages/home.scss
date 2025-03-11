@@ -7,6 +7,7 @@
 
 //section 전역 설정
 .section {
+    overflow:hidden;
     &__inner {
         margin: 5em auto;
         max-width: vars.$ly-max-width;

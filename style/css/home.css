@@ -3,6 +3,9 @@
 @import url("./text-effect.css");
 @import url("./slide-effect.css");
 @import url("./text-circle-around.css");
+.section {
+  overflow: hidden;
+}
 .section__inner {
   margin: 5em auto;
   max-width: 1320px;
