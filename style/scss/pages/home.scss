@@ -85,7 +85,7 @@
 }
 
 .section{
-    &__about{
+    &__about-us{
         padding-top:4em;
         width:100%;
         height:100vh;   
@@ -117,12 +117,19 @@
 
     }
     .section{
-        &__about{
+        &__about-us{
             height:500px;
         }
     }
 }
 
+//section whyus
+.section{
+    &__whyus{
+        width:100%;
+        height:200vh;
+    }
+}
 
 .blank{
     width:100%;

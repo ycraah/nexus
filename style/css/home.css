@@ -75,7 +75,7 @@
   background: url("/src/img/bg-about.png") center no-repeat;
 }
 
-.section__about {
+.section__about-us {
   padding-top: 4em;
   width: 100%;
   height: 100vh;
@@ -102,10 +102,15 @@
   .section.is-overflow .slider__slide {
     min-width: 60vw;
   }
-  .section__about {
+  .section__about-us {
     height: 500px;
   }
 }
+.section__whyus {
+  width: 100%;
+  height: 200vh;
+}
+
 .blank {
   width: 100%;
   height: 100vh;

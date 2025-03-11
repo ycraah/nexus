@@ -2,7 +2,7 @@ const slideEffectVertical = () => {
     const textWrapper = document.querySelector(".section__text");
     const slider = document.querySelector(".slider");
     const sliderWrapper = document.querySelector(".slider__wrapper");
-    const about = document.querySelector(".section__about");
+    const about = document.querySelector(".section__about-us");
     
    
     window.addEventListener("wheel", (e) => {
