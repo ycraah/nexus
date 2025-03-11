@@ -1,10 +1,9 @@
 const slideEffectVertical = () => {
     const textWrapper = document.querySelector(".section__text");
-    const slider = document.querySelector(".slider");
-    const sliderWrapper = document.querySelector(".slider__wrapper");
+    const slider = document.querySelector(".section__toogleSlider .slider");
+    const sliderWrapper = document.querySelector(".section__toogleSlider .slider__wrapper");
     const about = document.querySelector(".section__about-us");
-    
-   
+
     window.addEventListener("wheel", (e) => {
         const scrollLeft = sliderWrapper.scrollLeft;
         const scrollRect = slider.getBoundingClientRect();
@@ -29,5 +28,7 @@ const slideEffectVertical = () => {
     })
     observer.observe(about);
 }
+
+
 
 export { slideEffectVertical };
