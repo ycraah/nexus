@@ -15,6 +15,7 @@
 .section .slope-left {
   rotate: -2deg;
   background-color: #0367fc;
+  padding: 0 2em;
 }
 .section .slope-left .text-belt__list {
   display: flex;
