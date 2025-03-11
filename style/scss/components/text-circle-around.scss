@@ -1,21 +1,22 @@
 .section{
     position:relative;
+    overflow:visible;
     .text-belt{
         position:absolute;
-        bottom:50px;
+        bottom:0;
         left:-1vw;
-        width:105vw;
+        width:102vw;
         height:100px;
         white-space: nowrap;
         
     }
     .slope-right{
         background-color: #2c3440;
-        rotate:(2deg);
+        rotate:(1deg);
         z-index:5;
     }
     .slope-left{
-        rotate:(-2deg);
+        rotate:(-1deg);
         background-color:#0367fc;
         padding: 0 3em;
         overflow:hidden;
@@ -38,4 +39,8 @@
     100%{
         transform: translateX(-100%);
     }
+}
+
+.section.section__about-us{
+    overflow:visible;
 }

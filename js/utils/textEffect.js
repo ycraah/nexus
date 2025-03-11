@@ -27,14 +27,13 @@ const inputText = (() => {
     const textBeltTextArr = ["web design", "illustration", "development", "logo & branding", "mobile app design"];
     const upperCaseArr = textBeltTextArr.map(text => text.toUpperCase());
     const textBelt = document.querySelector(".section__about-us .text-belt__list");
-    setInterval(()=> {
         for(let i = 0; i < upperCaseArr.length; i++){
             const $li = document.createElement("li");
             const textNode = document.createTextNode(upperCaseArr[i]);
             $li.appendChild(textNode);
             textBelt.appendChild($li);
         }
-    }, 1000)
+    
 }) 
 
 export {textButtomUpRotate, textButtomUpOpacity, inputText}
