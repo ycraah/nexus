@@ -95,6 +95,17 @@
   line-height: 150%;
 }
 
+@media screen and (max-width: 760px) {
+  .section.is-overflow .slider {
+    height: 500px;
+  }
+  .section.is-overflow .slider__slide {
+    min-width: 60vw;
+  }
+  .section__about {
+    height: 500px;
+  }
+}
 .blank {
   width: 100%;
   height: 100vh;
