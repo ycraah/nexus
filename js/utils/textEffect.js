@@ -28,11 +28,11 @@ const inputText = (() => {
     const upperCaseArr = textBeltTextArr.map(text => text.toUpperCase());
     const textBelt = document.querySelector(".section__about-us .text-belt__list");
         for(let i = 0; i < upperCaseArr.length; i++){
-                const $imgLi = document.createElement("li");
+                const $imgLi = document.createElement("p");
                 const $img = document.createElement("img");
                 $img.src = "./src/img/star.svg";
                 $imgLi.appendChild($img); 
-                const $li = document.createElement("li");
+                const $li = document.createElement("p");
                 const textNode = document.createTextNode(upperCaseArr[i]);
                 $li.appendChild(textNode);
                 textBelt.appendChild($li);

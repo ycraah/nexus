@@ -6,6 +6,8 @@
 @import url("./text-circle-around.css");
 @import url("./slider.css");
 
+
+
 //section 전역 설정
 .section {
     overflow:hidden;
@@ -93,7 +95,6 @@
 .section{
     &__why-us{
         margin-top:15em;
-        width:100vw;
         height:200vh;
         text-align:center;
         overflow:hidden;
@@ -119,7 +120,4 @@
     
 }
 
-.blank{
-    width:100%;
-    height:100vh;
-}
+
