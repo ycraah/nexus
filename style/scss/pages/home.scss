@@ -93,9 +93,10 @@
 .section{
     &__why-us{
         margin-top:15em;
-        width:100%;
+        width:100vw;
         height:200vh;
         text-align:center;
+        overflow:hidden;
         &__subject{
             font-size:1.2rem;
             color:#0367fc;

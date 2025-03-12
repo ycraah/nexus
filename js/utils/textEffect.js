@@ -28,12 +28,27 @@ const inputText = (() => {
     const upperCaseArr = textBeltTextArr.map(text => text.toUpperCase());
     const textBelt = document.querySelector(".section__about-us .text-belt__list");
         for(let i = 0; i < upperCaseArr.length; i++){
-            const $li = document.createElement("li");
-            const textNode = document.createTextNode(upperCaseArr[i]);
-            $li.appendChild(textNode);
-            textBelt.appendChild($li);
+                const $imgLi = document.createElement("li");
+                const $img = document.createElement("img");
+                $img.src = "./src/img/star.svg";
+                $imgLi.appendChild($img); 
+                const $li = document.createElement("li");
+                const textNode = document.createTextNode(upperCaseArr[i]);
+                $li.appendChild(textNode);
+                textBelt.appendChild($li);
+                textBelt.appendChild($imgLi);        
         }
-    
+        
+    let index = 0;
+    const textBeliClone = textBelt.cloneNode(true);
+    textBelt.appendChild(textBeliClone);
+    setInterval(() => {
+        textBelt.style.transform = `translateX(${index}px)`;
+        index += -1; 
+        if (index <= -textBelt.scrollWidth / 2) {
+            index = 0;
+        }
+    }, 10);
 }) 
 
 export {textButtomUpRotate, textButtomUpOpacity, inputText}
